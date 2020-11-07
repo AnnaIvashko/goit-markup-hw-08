@@ -1,0 +1,15 @@
+@import "./utils/variables";
+@import "./utils/is-hidden";
+
+@import "./base/common";
+@import "./base/container";
+
+@import "./components/modal";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/advantages";
+@import "./layout/direction";
+@import "./layout/team";
+@import "./layout/customers";
+@import "./layout/footer";

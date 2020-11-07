@@ -1,0 +1,184 @@
+/* HEADER */
+@import "./utils/variables";
+@import "./utils/is-hidden";
+@import "./base/common";
+@import "./base/container";
+@import "./components/modal";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/advantages";
+@import "./layout/direction";
+@import "./layout/team";
+@import "./layout/customers";
+@import "./layout/footer";
+
+/* HERO */
+
+/* ADVANTAGES */
+
+/* DIRECTION */
+
+/* TEAM */
+
+/* CUSTOMERS */
+
+/* FOOTER */
+
+/* PORTFOLIO */
+.navigation-filter {
+  margin-top: 94px;
+  margin-bottom: 34px;
+}
+
+.portfolio-title {
+  display: none;
+}
+
+.portfolio-navigation {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+
+.portfolio-card {
+  width: 370px;
+  height: 404px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.portfolio-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-list {
+  width: 370px;
+  margin-right: 30px;
+}
+
+.portfolio-list:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0%);
+}
+
+.portfolio-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transform: translateY(100%);
+}
+
+.portfolio-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+
+  margin-top: 63px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.portfolio-list:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio-list:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.filter-btn {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  background: #f5f4fa;
+  border-radius: 4px;
+
+  height: 38px;
+  padding: 6px 22px;
+  border: 1px solid transparent;
+
+  cursor: pointer;
+
+  margin-right: 8px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-box {
+  margin-bottom: 94px;
+}
+
+.filter-btn:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio-card {
+  margin-top: 30px;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+}
+
+.portfolio-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-left: 24px;
+}
+
+.subtitle {
+  margin-left: 24px;
+  margin-top: 20px;
+}
+
+/* CUSTOMERS */
+
+
+
+/* MODAL FORM  */
