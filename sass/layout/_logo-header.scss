@@ -1,0 +1,46 @@
+.logo {
+  color: $accent-color;
+  font-family: $secondary-font, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  &-link {
+    color: $main-color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $main-color;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-right: 253px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 81px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 85px;
+  }
+}
+
+.logo-studio {
+  color: $main-color;
+  font-family: $secondary-font, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
+}
