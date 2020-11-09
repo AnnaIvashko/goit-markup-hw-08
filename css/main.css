@@ -321,77 +321,74 @@ img {
   margin: auto;
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
+.hero-title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero .box {
     background-image: url(../img/hero/bg-mobile@2x.jpg);
   }
-  .hero-title {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-color: #c4c4c4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/bg-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 320px) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 320px) and (min-width: 1200px) {
-  .hero-title {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) and (max-width: 1199px), screen and (min-width: 768px) and (min-resolution: 192dpi) and (max-width: 1199px), screen and (min-width: 768px) and (min-resolution: 2dppx) and (max-width: 1199px) {
+  .hero .box {
+    background-image: url(../img/hero/bg-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
     font-size: 44px;
     line-height: 1.36;
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
-  .hero .modal-btn {
-    align-items: center;
-    display: inline-block;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: #ffffff;
-    background-color: #2196f3;
-    padding: 10px 28px;
-    width: 200px;
-    height: 50px;
-    border: 1px solid #2196f3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 30px;
-  }
+.modal-btn {
+  align-items: center;
+  display: inline-block;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  padding: 10px 28px;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 30px;
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 320px) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 320px) and (min-width: 1200px) {
-  .hero .modal-btn {
+@media screen and (min-width: 1200px) {
+  .modal-btn {
     margin-bottom: 200px;
   }
 }
 
 .advantages-hidden {
   display: none;
-}
-
-.advantages-list-item {
-  margin-top: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .advantages-list-item {
-    width: 270px;
-    margin-top: 94px;
-  }
-  .advantages-list-item:not(:last-child) {
-    margin-right: 30px;
-  }
-  .advantages-list-item .advantages-list {
-    display: flex;
-  }
 }
 
 .advantages-title {
@@ -401,6 +398,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  text-align: center;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -410,6 +409,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  text-align: start;
 }
 
 .icon-svg {
@@ -426,10 +426,31 @@ img {
   align-items: center;
   background: #f5f4fa;
   border-radius: 4px;
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-svg .advantages-list-item .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .container-svg {
+  .container-svg .advantages-list-item {
+    width: 270px;
+    margin-top: 94px;
+  }
+  .container-svg .advantages-list-item .advantages-list:not(:last-child) {
+    margin-right: 30px;
+  }
+  .container-svg .advantages-list-item .advantages-list {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-svg .advantages-list .container-svg {
     width: 270px;
     margin-top: 94px;
     margin-bottom: 30px;

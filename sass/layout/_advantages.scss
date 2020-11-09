@@ -10,7 +10,8 @@
   text-transform: uppercase;
   color: $main-color;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .advantages-description {
@@ -19,6 +20,7 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  text-align: start;
 }
 
 .icon-svg {
@@ -35,11 +37,12 @@
   align-items: center;
   background: #f5f4fa;
   border-radius: 4px;
+  margin-top: 60px;
 
   .advantages-list {
     &-item {
-      margin-top: 60px;
-      margin-bottom: 30px;
+      // margin-top: 60px;
+      // margin-bottom: 30px;
 
       @media screen and(min-width: 768px) {
         .advantages-list {
