@@ -584,6 +584,13 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  -box {
+    width: 353px;
+    height: 536px;
+  }
+}
+
 .customers .title {
   margin-bottom: 50px;
   margin-top: 94px;
