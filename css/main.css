@@ -254,21 +254,42 @@ img {
   border: none;
 }
 
+.logo {
+  color: #2196f3;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
 .logo-link {
-  display: block;
-  float: left;
+  color: #212121;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-btn {
-  float: right;
+.logo-studio {
+  color: #212121;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
-.logo-link,
-.menu-btn {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  padding: 10px;
+@media screen and (min-width: 1200px) {
+  .logo-studio {
+    font-size: 26px;
+  }
 }
 
 .header {
@@ -720,9 +741,15 @@ img {
   fill: #ffffff;
 }
 
+.footer-mail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .footer-contact-mail {
   height: 50px;
-  width: 358px;
+  width: 354px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -769,8 +796,8 @@ img {
 }
 
 .mail-btn {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   font-family: Raleway;
   font-style: normal;
@@ -787,13 +814,16 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  margin-left: 12px;
-  padding: 6px 22px;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
   .footer .container {
     display: block;
+  }
+  .footer .container-mail {
+    display: flex;
+    justify-content: center;
   }
   .social-footer-link {
     width: 210px;
@@ -809,8 +839,22 @@ img {
     padding-top: 60px;
     display: flex;
     flex-wrap: wrap;
-    width: 446px;
+    width: 100%;
     text-align: center;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-mail {
+    display: flex;
+  }
+  .mail-btn {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+  .footer-contact-mail {
+    width: 354px;
   }
 }
 /*# sourceMappingURL=main.css.map */

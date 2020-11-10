@@ -74,9 +74,15 @@
     fill: #ffffff;
   }
 
+  &-mail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   &-contact-mail {
     height: 50px;
-    width: 358px;
+    width: 354px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -128,8 +134,8 @@
 }
 
 .mail-btn {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   font-family: $secondary-font;
   font-style: normal;
@@ -147,13 +153,17 @@
   border-radius: 4px;
   cursor: pointer;
 
-  margin-left: 12px;
-  padding: 6px 22px;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
   .footer .container {
     display: block;
+
+    &-mail {
+      display: flex;
+      justify-content: center;
+    }
   }
   .social-footer-link {
     width: 210px;
@@ -169,7 +179,24 @@
     padding-top: 60px;
     display: flex;
     flex-wrap: wrap;
-    width: 446px;
+    width: 100%;
     text-align: center;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-mail {
+    display: flex;
+  }
+  .mail-btn {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+
+  .footer-contact-mail {
+    width: 354px;
   }
 }
