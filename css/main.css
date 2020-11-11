@@ -16,6 +16,10 @@ body {
   font-style: normal;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .list {
   list-style: none;
 }
@@ -64,8 +68,10 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 94px;
   background-color: rgba(0, 0, 0, 0.2);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  overflow-y: scroll;
 }
 
 .backdrop .is-hidden .modal {
@@ -77,9 +83,10 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 300px;
   transform: translate(-50%, -50%) scale(1);
   background-color: #ffffff;
-  padding: 40px;
+  padding: 30px;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
@@ -89,10 +96,24 @@ img {
   fill: #000000;
 }
 
-@media screen and (min-width: 310px) and (max-width: 480px) {
+@media screen and (min-width: 310px) and (max-width: 489px) {
   .modal {
     width: 100%;
     margin: auto;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -120,11 +141,17 @@ img {
   font-family: Roboto;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-title {
+    line-height: 1.15;
+  }
 }
 
 .modal-form {
@@ -151,8 +178,8 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  margin: auto;
   margin-top: 30px;
-  margin-left: 124px;
 }
 
 .modal-form-field {
@@ -182,7 +209,7 @@ img {
 .modal-form-input {
   display: block;
   height: 40px;
-  width: 448px;
+  width: 100%;
   border-radius: 4px;
   border: 1px solid #757575;
   margin-top: 4px;
@@ -223,7 +250,7 @@ img {
 
 .modal-form-policy-label {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
@@ -247,6 +274,12 @@ img {
 .modal-form-policy:checked + .modal-form-policy-label::before {
   background-color: #2196f3;
   border: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-policy-label {
+    font-size: 14px;
+  }
 }
 
 .logo {
@@ -353,7 +386,7 @@ img {
   }
   .navigation-list-contact {
     display: inline-block;
-    justify-content: center;
+    align-items: center;
   }
   .navigation-list-link {
     font-weight: 500;
@@ -379,7 +412,7 @@ img {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -191%;
+    bottom: -192%;
     display: block;
     width: 100%;
     height: 4px;
@@ -389,14 +422,19 @@ img {
   .navigation-list-item:not(:last-child) {
     margin-right: 50px;
   }
+  .navigation .contact-list {
+    padding-bottom: 8px;
+  }
 }
 
 @media screen and (min-width: 768px) and (min-width: 1200px) {
-  .navigation {
-    justify-content: space-around;
+  .navigation-list {
+    margin-left: 93px;
+    margin-right: 305px;
   }
   .navigation-list-contact {
     display: flex;
+    width: 332px;
     text-align: center;
     justify-content: space-between;
   }
