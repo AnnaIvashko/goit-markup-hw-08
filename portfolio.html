@@ -20,13 +20,13 @@
       <div class="container">
         <nav class="navigation">
           <a class="logo-link link" href="index.html" aria-label="logo Webstudio"><span class="logo">Web</span>Studio</a>
-          <button type="button" class="menu-btn is-open" aria-expanded="false">
+          <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
             <svg width=40 height=40 aria-label="Переключатель мобильного меню">
               <use class="icon-close" href="./img/sprite.svg#close"></use>
               <use class="icon-menu" href="./img/sprite.svg#menu"></use>
             </svg>
           </button>
-          <div class="menu-container">
+          <div class="menu-container" id="menu-container" data-menu>
             <ul class="navigation-list list">
               <li class="navigation-list-item">
                 <a class="navigation-list-link link current " href="index.html">Студия</a>
@@ -42,8 +42,8 @@
               </li>
             </ul>
             <address class="address">
-              <ul class="navigation-list">
-                <li class="list">
+              <ul class="navigation-list-contact">
+                <li class="contact-list list">
                   <div class="mail">
                     <svg class="header-icon" width=16px height=12px>
                       <use href="./img/sprite.svg#envelope"></use>
@@ -51,7 +51,7 @@
                     <a class="mail-list-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                   </div>
                 </li>
-                <li class="list">
+                <li class="contact-list list">
                   <div class="tel">
                     <svg class="header-icon" width=10px height=16px>
                       <use href="./img/sprite.svg#smartphone"></use>
@@ -67,7 +67,9 @@
     
       </div>
     </header>
+
     <main>
+      
       <!--PORTFOLIO-->
       <section class="portfolio">
         <div class="container">
