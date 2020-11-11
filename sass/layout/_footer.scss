@@ -18,7 +18,7 @@
       font-size: 26px;
       line-height: 1.19;
       letter-spacing: 0.03em;
-      color: #ffffff;
+      color: $white-color;
 
       margin-bottom: 20px;
     }
@@ -29,7 +29,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color: $white-color;
 
     padding-bottom: 9px;
     margin-bottom: 54px;
@@ -61,7 +61,7 @@
     background: rgba(255, 255, 255, 0.1);
 
     &:focus .social-icon-footer {
-      fill: #ffffff;
+      fill: $white-color;
     }
 
     &:hover,
@@ -71,7 +71,7 @@
   }
 
   &-social-list:hover .social-icon-footer {
-    fill: #ffffff;
+    fill: $white-color;
   }
 
   &-mail {
@@ -91,7 +91,7 @@
 
     padding-left: 16px;
     background-color: #2f303a;
-    color: #ffffff;
+    color: $white-color;
   }
 
   & input::placeholder {
@@ -113,7 +113,7 @@
   text-transform: uppercase;
   width: 100%;
 
-  color: #ffffff;
+  color: $white-color;
   margin-bottom: 20px;
 }
 
@@ -144,7 +144,7 @@
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: $white-color;
   background-color: $accent-color;
   width: 200px;
   height: 50px;
