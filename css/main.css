@@ -349,6 +349,7 @@ img {
   .navigation-list {
     display: flex;
     align-items: baseline;
+    margin-right: 84px;
   }
   .navigation-list-contact {
     display: inline-block;
@@ -388,9 +389,20 @@ img {
   .navigation-list-item:not(:last-child) {
     margin-right: 50px;
   }
-  .address .list:not(:last-child) {
-    margin-right: 50px;
+}
+
+@media screen and (min-width: 768px) and (min-width: 120px) {
+  .navigation {
+    justify-content: space-around;
   }
+  .navigation-list-contact {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .logo {
     font-family: Raleway;
     font-style: normal;
