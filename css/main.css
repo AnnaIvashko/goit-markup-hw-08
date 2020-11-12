@@ -550,6 +550,9 @@ img {
   .navigation .contact-list .tel:hover {
     fill: #2196f3;
   }
+  .address-box {
+    margin-top: -15px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -683,7 +686,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #f5f4fa;
+  color: #212121;
   text-align: start;
 }
 
