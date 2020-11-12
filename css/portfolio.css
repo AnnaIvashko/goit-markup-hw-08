@@ -351,16 +351,6 @@ img {
   cursor: pointer;
 }
 
-.navigation-list-link .current::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: #2196f3;
-  border-radius: 2px;
-}
-
 @media screen and (max-width: 767px) {
   .navigation {
     display: flex;
@@ -432,7 +422,7 @@ img {
   }
   .header .mail-list-link {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
@@ -442,7 +432,7 @@ img {
   }
   .header .tel-list-link {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
