@@ -5,7 +5,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
     padding-top: 60px;
   }
 
@@ -36,6 +35,13 @@
 
     &-list {
       display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .left-footer {
+      margin-right: 165px;
+      padding-left: 76px;
     }
   }
 
@@ -197,6 +203,11 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .footer .container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
   .footer-mail {
     display: flex;
   }
