@@ -305,7 +305,7 @@ img {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logo-studio {
+.logo .logo-studio {
   color: #212121;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -316,7 +316,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .logo-studio {
+  .logo .logo-studio {
     font-size: 26px;
   }
 }
@@ -376,6 +376,8 @@ img {
     color: #2196f3;
   }
   .navigation .navigation-list-link {
+    position: relative;
+    padding-bottom: 8px;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.17;
@@ -393,9 +395,18 @@ img {
     pointer-events: auto;
   }
   .navigation-item {
-    position: relative;
     text-align: center;
     margin-bottom: 40px;
+  }
+  .navigation-list-link .current::after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    content: "";
+    width: 61px;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 4px;
   }
   .mail {
     padding-bottom: 16px;
@@ -549,6 +560,9 @@ img {
   .navigation-list {
     margin-left: 93px;
     margin-right: 300px;
+  }
+  .address-box {
+    margin-top: 0px;
   }
   .navigation-list-contact {
     display: flex;
