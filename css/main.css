@@ -420,7 +420,7 @@ img {
   .header .menu-container {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 101%;
     left: 0;
     width: 100%;
     background: #ffffff;
