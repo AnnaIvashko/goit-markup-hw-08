@@ -4,15 +4,15 @@
 }
 
 .menu-button {
-  display: flex;
-  margin: 10px;
+  display: inline-flex;
+  margin: 0px;
   padding: 0px;
   border: none;
   background: transparent;
 
-  &.icon-close {
-    display: none;
-  }
+  // &.icon-close {
+  //   display: none;
+  // }
 
   &.is-open .icon-close {
     display: block;

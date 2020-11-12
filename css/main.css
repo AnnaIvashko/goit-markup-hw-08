@@ -334,15 +334,11 @@ img {
   background: transparent;
 }
 
-.menu-button.icon-close {
-  display: none;
-}
-
-.menu-button.is-open .icon-close {
+.menu-button .is-open .icon-close {
   display: block;
 }
 
-.menu-button.is-open .icon-menu {
+.menu-button .is-open .icon-menu {
   display: none;
 }
 
@@ -360,7 +356,7 @@ img {
 @media screen and (max-width: 767px) {
   .navigation {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
   }
   .navigation-list {
@@ -384,7 +380,8 @@ img {
     color: #212121;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .navigation-list-link:hover, .navigation-list-link:focus {
+  .navigation-list-link:hover,
+  .navigation-list-link:focus {
     color: #2196f3;
   }
   .navigation-list-link:focus .navigation-element,
@@ -464,7 +461,8 @@ img {
     color: #212121;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .navigation-list-link:hover, .navigation-list-link:focus {
+  .navigation-list-link:hover,
+  .navigation-list-link:focus {
     color: #2196f3;
   }
   .navigation-list-link:focus .navigation-element,
@@ -533,7 +531,8 @@ img {
     letter-spacing: 0.02em;
     color: #757575;
   }
-  .mail-list-link:hover, .mail-list-link:focus {
+  .mail-list-link:hover,
+  .mail-list-link:focus {
     color: #2196f3;
   }
   .tel-list-link {
@@ -543,7 +542,8 @@ img {
     letter-spacing: 0.02em;
     color: #757575;
   }
-  .tel-list-link:hover, .tel-list-link:focus {
+  .tel-list-link:hover,
+  .tel-list-link:focus {
     color: #2196f3;
   }
   .tel-list-link .header-icon {
@@ -559,7 +559,11 @@ img {
 
 .hero {
   background-color: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/bg-mobile.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/hero/bg-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -600,27 +604,47 @@ img {
   margin-top: 30px;
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/bg-mobile@2x.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hero/bg-mobile@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/bg-tablet.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hero/bg-tablet.jpg);
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/bg-tablet@2x.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hero/bg-tablet@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/bg-desktop.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hero/bg-desktop.jpg);
   }
   .hero-title {
     font-size: 44px;
@@ -628,9 +652,15 @@ img {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/bg-desktop@2x.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hero/bg-desktop@2x.jpg);
   }
 }
 
@@ -805,7 +835,8 @@ img {
 
 .team-box {
   background: #ffffff;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   margin-bottom: 60px;
   padding-bottom: 24px;
@@ -895,7 +926,8 @@ img {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customer-link:hover, .customer-link:focus {
+.customer-link:hover,
+.customer-link:focus {
   border-color: #2196f3;
 }
 
@@ -989,7 +1021,8 @@ img {
   fill: #ffffff;
 }
 
-.footer-social-link:hover, .footer-social-link:focus {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: #2196f3;
 }
 
