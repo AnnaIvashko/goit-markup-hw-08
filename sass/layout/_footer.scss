@@ -177,17 +177,16 @@
   }
   .modal-mailig {
     padding-top: 60px;
+    padding-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     text-align: center;
-    margin: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .modal-mailig {
-    padding-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
