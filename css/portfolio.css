@@ -647,6 +647,10 @@ img {
   cursor: pointer;
 }
 
+.portfolio-box {
+  margin-bottom: 60px;
+}
+
 .portfolio-list-img {
   width: 100%;
 }
